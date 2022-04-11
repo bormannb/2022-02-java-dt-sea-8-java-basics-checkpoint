@@ -1,0 +1,84 @@
+Q: What is the difference between the branch names "main" and "master"?
+A: master ist der ältere Name, main ist der neuere Name.
+
+Q: How do you checkout into the working tree of branch "main"?
+A: “git checkout” command with the “-b” option for a new branch. // Wechseln von Branches: git checkout ＜branchname＞
+
+Q: What is the command that allows you to temporarily store away your current, uncommited changes in order to restore them later?
+A: git stash
+
+Q: How do you list the commit history?
+A: git log commit
+
+Q: What is the difference between "git pull" and "git fetch"?
+A: Git fetch fetches the required information only to the local repository. 
+Git pull fetches the required information not only to the local repository but also to the workspace that you are currently working in
+
+Q: What is the return type of the expression (true && false)?
+A:false
+
+Q: How can you write "i = i + 2" more concisely?
+A: i+=2 // int n = 2; i+=n
+
+Q: How do you split a string on each occurence of ","?
+A: String[] split(String regex) Cutting
+for (String customer : standardCustomers) {
+            String[] fields = customer.split(",");
+            StandardCustomer standard = new StandardCustomer (fields[0], fields[1], fields[2]);
+            Scustomers.add(standard);
+            System.out.println("I am Customer " + fields[1] + " with ID " + fields[0] + " and will pay only " + standard.calculateDiscount(value) + " euros for the new product!");
+        }
+
+Q: How do you compare a String the proper way? How do you ignore the casing of the words?
+A: equalsIgnoreCase() method
+
+Q: Name an implementation of the "List" interface. Is a list ordered, is it sorted?
+A: ArrayList; LinkedList; List is an ordered, not sorted Collection
+
+Q: Name an implementation of the "Set" interface. Is a list ordered, is it sorted?
+A: HashSet. LinkedHashSet. EnumSet; Set is not ordered, but sorted implementation exists like TreeSet.
+
+Q: We have an array "humans", what is the correct way of retrieving it's size?
+A: humans.lenght
+
+Q: For a list "humans", we try to access it's size with "int size = humans.size;". Is that correct?
+A:  size() 
+int size = humans.size();
+
+Q: How can we catch exceptions and prevent them from crashing our program?
+A: try and catch
+
+Q: How can you quickly load all lines from a file "quiz.txt" using a class from "java.nio"?
+A: 
+import java.util.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.io.*;
+public class OpenFileExample.
+{
+public static List<String> readFileInList(String fileName)
+{
+
+Q: We have a class "Apple" that has an attribute "price" and also contains a "DEFAULT_PRICE" for all new apples. Which of them is static and why?
+A: DEFAULT_PRICE is static, das Attribut ist als static "fest verdrahtet" und wird zur Laufzeit nicht verändert. 
+
+Q: What is the full declaration of the "main" method of a class?
+A: public static void main(String[] args) {
+ // Method body goes here. } 
+
+Q: What is an object?
+A: A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and a state. The state of an object is stored in fields (variables), while methods (functions) display the object's behavior. 
+Objects are created at runtime from templates, which are also known as classes.
+
+Q: Which naming rule should you apply to the naming of methods?
+A: Methods should be verbs, in mixed case with the first letter lowercase, 
+with the first letter of each internal word capitalized. Example: getBackground();
+
+Q: Does java.util.Date only describe the date?
+A: Date has Date and Time mixed in one Object; noc clear separation of concerns in object model.
+
+Q: How can you store the local time (no time zone info)?
+A: LocalTime now = LocalTime.now();
+
+Q: Name at least one example of a generic interface from the standard library.
+A: public class GenericsType<T> {
