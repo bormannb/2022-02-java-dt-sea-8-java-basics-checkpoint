@@ -23,11 +23,21 @@ public class Certificate implements IExpireable {
 
     public void renew(long daysValidFromNow) {
         // TODO: renew certificate
+
+// vom Test herleiten:
+        // assertFalse(testCertificate.isExpired(), String.format("%s should have been renewed for 30 days from now.", testCertificate.toString()));
+        // assertEquals(LocalDate.now().plusDays(30), testCertificate.expiryDate(), "Expiry date does not match expected date.");
+
+
     }
 
     @Override
     public boolean isExpired() {
         // TODO: Provide the neccessary check here
+        
+
+
+
         return false;
     }
 
