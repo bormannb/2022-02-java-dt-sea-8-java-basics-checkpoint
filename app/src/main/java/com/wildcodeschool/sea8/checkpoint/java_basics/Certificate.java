@@ -36,15 +36,16 @@ public class Certificate implements IExpireable {
         // TODO: Provide the neccessary check here
         
 
-
-
-        return false;
+            // Vergleich des valid to mit dem heutigen Datum
+        boolean isNowAfterExiriy = LocalDate.now().isAfter(validTo) ;
+        return isNowAfterExiriy;
+        // return false;
     }
 
     @Override
     public LocalDate expiryDate() {
         // TODO: Return the expiration date
-        return null;
+        return validTo;
     }
 
     @Override
